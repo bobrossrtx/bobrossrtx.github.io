@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fira Code", monospace;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: -1.5em;
+  left: 0;
+  right: 0;
+}
+.nav-wrapper .navbar {
+  height: 3em;
+  width: 100vw;
+  padding: 5px;
+}
+.nav-wrapper .navbar.nav-dark {
+  background: #222222;
+}
+.nav-wrapper .navbar.nav-col-light {
+  color: white;
+}
+.nav-wrapper .navbar .nav-title {
+  user-select: none;
+}
+.nav-wrapper .navbar .nav-title h2 {
+  position: relative;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.0625em;
+  width: calc(20ch + 20 * 0.0625em);
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.github .avatar {
+  position: relative;
+  margin-top: 10vh;
+  height: 96px;
+  width: auto;
+}
+.github .avatar.border {
+  border: 0.355em solid #222222;
+}
+.github .avatar.border.avatar-border {
+  border-radius: 50%;
+}
+.github .profile-username {
+  color: #222222;
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.0625em;
+}
+.github .profile-div {
+  position: absolute;
+  margin-top: 6em;
+  margin-left: 7.5em;
+}
+.github .profile-div button {
+  background: #222222;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 1em;
+  outline: none;
+}
+.github .profile-div button:hover {
+  background: #363636;
+  cursor: pointer;
+}
+.github .repos {
+  position: absolute;
+  height: 50vh;
+  width: 80vw;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+}
+.github .repos > .repos-section-label {
+  position: absolute;
+  margin-top: 30vh;
+  color: #222222;
+  letter-spacing: 0.0625em;
+}
+.github .repos .repo-model-button {
+  text-decoration: none;
+}
+.github .repos #repos {
+  margin-top: 35em;
+  width: 90vw;
+  overflow: scroll;
+  overflow-y: hidden;
+  display: flex;
+}
+.github .repos #repos .repo-model {
+  color: white;
+  width: 30vw;
+  height: 10vh;
+  padding: 1em;
+  margin: 1em;
+  background: #222222;
+  border-radius: 15px;
+  align-items: center;
+}
+.github .repos #repos .repo-model > .repo-title {
+  position: relative;
+  margin-top: 0;
+  text-decoration: underline;
+  max-width: 20vw;
+}
+.github .repos #repos .repo-model > .repo-desc {
+  position: relative;
+  margin-top: -1em;
+}
+.github .repos #repos .repo-model > .repo-breadcrumb {
+  text-align: right;
+  font-size: 12px;
+  position: relative;
+  margin-left: 17vw;
+  margin-top: -4em;
+  margin-bottom: 2em;
+}
+.github .repos #repos::-webkit-scrollbar {
+  height: 10px;
+  /* height of horizontal scrollbar ← You're missing this */
+  border: 2px solid #000000;
+  border-radius: 100px;
+}
+.github .repos #repos::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 100px;
+}
+
+/*# sourceMappingURL=main.css.map */
