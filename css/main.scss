@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap');
+
+$color-dark: #222222;
+$color-dark-hov: #363636;
+$color-light: rgb(255, 255, 255);
+$nav-position: 0;
+$nav-position-top: -1.5em;
+$nav-padding: 5px;
+$nav-title-width: calc(20ch + 20*0.0625em);
+$nav-ltr-spcing: 0.0625em;
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Code', monospace;
+}
+
+.nav-wrapper{
+    position: fixed;
+    top: $nav-position-top;
+    left: $nav-position;
+    right: $nav-position;
+    .navbar{
+        height: 3em;
+        width: 100vw;
+        padding: $nav-padding;
+        &.nav-dark{
+            background: $color-dark;
+        }
+        &.nav-col-light{
+            color: $color-light;
+        }
+
+        .nav-title{
+            h2{
+                position: relative;
+                line-height: normal;
+                text-align: center;
+                white-space: nowrap;
+                letter-spacing: $nav-ltr-spcing;
+                width: $nav-title-width;
+            }
+        }
+    }
+}
+
+.github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .avatar{
+        position: relative;
+        margin-top: 10vh;
+        height: 96px;
+        width: auto;
+        &.border{
+            border: .355em solid $color-dark;
+            &.avatar-border{
+                border-radius: 50%;
+            }
+        }
+    }
+    .profile-username{
+        color: $color-dark;
+        text-decoration-thickness: 3px;
+    }
+    .profile-div{
+        position: absolute;
+        margin-top: 6em;
+        margin-left: 7.5em;
+        button{
+            background: $color-dark;
+            color: $color-light;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 1em;
+        }
+        button:hover{
+            background: $color-dark-hov;
+            cursor: pointer;
+        }
+    }
+}
