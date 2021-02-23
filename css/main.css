@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap");
 body {
   display: flex;
@@ -130,8 +129,7 @@ body {
 }
 .github .repos #repos::-webkit-scrollbar {
   height: 10px;
-  /* height of horizontal scrollbar ← You're missing this */
-  border: 2px solid #000000;
+  border: 2px solid black;
   border-radius: 100px;
 }
 .github .repos #repos::-webkit-scrollbar-thumb {
